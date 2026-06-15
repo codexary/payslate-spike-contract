@@ -1,0 +1,51 @@
+{
+  "consumer": {
+    "name": "Payslate"
+  },
+  "interactions": [
+    {
+      "description": "timesheets for a date",
+      "providerStates": [
+        {
+          "name": "a roster export exists"
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "path": "/timesheets",
+        "query": {
+          "date": [
+            "2026-02-23"
+          ]
+        }
+      },
+      "response": {
+        "body": {
+          "timesheets": [
+            {
+              "date": "2026-02-23",
+              "employee": "Alice Test",
+              "end": "17:00",
+              "start": "09:00"
+            }
+          ]
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pact-jvm": {
+      "version": "4.7.5"
+    },
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  },
+  "provider": {
+    "name": "RosterProvider"
+  }
+}
