@@ -18,6 +18,8 @@ The run passes with two tests: one consumer test, which regenerates the committe
 
 A passing stub verification only shows that our example response satisfies our pact. The same pact must be verified against a provider release before anyone claims compatibility.
 
+The observed test counts, field-rename experiment and compatibility limits are recorded in [FINDINGS.md](FINDINGS.md) ([简体中文](FINDINGS.zh-CN.md)).
+
 ## About this repository
 
 Elsworne, Payslate and the team are fictional.

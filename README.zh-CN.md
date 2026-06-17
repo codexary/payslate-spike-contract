@@ -18,6 +18,8 @@ Payslate 需要接入第三方排班 API，但团队无法控制该服务。本�
 
 桩服务通过验证，只能说明我们写的示例响应符合我们定义的契约。只有针对第三方服务的某个发布版本验证同一份 pact，才能声称该版本与 Payslate 兼容。
 
+测试数量、字段改名实验及结论的适用范围见 [FINDINGS.zh-CN.md](FINDINGS.zh-CN.md)（[English](FINDINGS.md)）。
+
 ## 关于本仓库
 
 Elsworne、Payslate 和团队成员均为虚构。
